@@ -1,5 +1,10 @@
 # 🏛️ Case Management Platform — Save the Children México
 
+> **End-to-End SaaS Platform for Graduate Program Operations**
+> Designed & delivered by **Daniel Almazán** · IT Project Manager & Technical Architect
+
+---
+
 ![Microsoft Power Platform](https://img.shields.io/badge/Microsoft-Power_Platform-742774?style=for-the-badge&logo=microsoft&logoColor=white)
 ![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
@@ -15,6 +20,11 @@
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
 > **Enterprise Architecture Case Study** — End-to-end design and delivery of a secure, cloud-native case management system for one of the world's largest child-rights organizations, operating across multiple field offices in Mexico.
+
+---
+
+> **⚠️ Confidentiality Notice**
+> This repository is a **public architecture case study only**. Per NDA agreements with the client organization, no proprietary source code, credentials, student data, or internal business logic is included. All references describe system capabilities at a design level to demonstrate architectural thinking, systems integration skills, and end-to-end project delivery.
 
 ---
 
@@ -421,7 +431,13 @@ The Power Apps Canvas application covers the **complete case management lifecycl
 ## Contact
 
 **Daniel Almazán**
-IT Project Manager | Technical Architecture Lead | Systems Integration Specialist
+IT Project Manager · Technical Architect · Systems Integration Specialist
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniel-almazan-l/)
+[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daniel.almazan.lopez16@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View_More-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/danielalmazan-manager?tab=repositories)
+
+---
 
 > *Designed, built, and documented end-to-end. From stakeholder interviews to DAX measures, from Flask microservices to field-staff training — this project represents the full spectrum of systems integration delivery.*
 
