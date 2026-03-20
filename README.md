@@ -1,6 +1,5 @@
 # 🏛️ Case Management Platform — Save the Children México
 
-> **End-to-End SaaS Platform for Graduate Program Operations**
 > Designed & delivered by **Daniel Almazán** · IT Project Manager & Technical Architect
 
 ---
