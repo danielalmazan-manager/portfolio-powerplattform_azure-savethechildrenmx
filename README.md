@@ -98,7 +98,6 @@ I owned this project end-to-end: from initial stakeholder discovery and requirem
 
 ![Architecture Diagram](./docs/architecture-diagram.svg)
 
-*[Insert Architecture Diagram Here — Replace with your own block diagram if preferred]*
 
 ### Architecture Overview
 
@@ -176,7 +175,6 @@ The semantic model follows a **Fact Constellation** (multi-fact) schema adapted 
 
 ![Data Model Diagram](./docs/data-model-diagram.svg)
 
-*[Insert ER Diagram Here — Replace with your own diagram if preferred]*
 
 ### Core Entities (The Three Pillars)
 
@@ -227,7 +225,6 @@ The orchestration layer handles all heavy processing asynchronously, keeping the
 
 ![Automation Flows](./docs/automation-flows.svg)
 
-*[Insert Automation Flow Diagram Here — Replace with your own diagram if preferred]*
 
 | # | Flow Name | Trigger | Purpose |
 |:--|:----------|:--------|:--------|
@@ -317,7 +314,6 @@ Power BI dashboards are **embedded directly inside Power Apps** as interactive t
 
 ![Dashboard Preview](./docs/dashboard-preview.svg)
 
-*[Insert Dashboard Screenshot Here — Replace with your own screenshot if preferred]*
 
 | Dashboard | Purpose | Key Visuals |
 |:----------|:--------|:------------|
