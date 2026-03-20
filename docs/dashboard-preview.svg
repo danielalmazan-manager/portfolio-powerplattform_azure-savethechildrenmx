@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" font-family="Segoe UI, Arial, sans-serif">
   <defs>
     <linearGradient id="dHdr" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#D42027"/><stop offset="100%" stop-color="#A0181D"/>
+      <stop offset="0%" stop-color="#D42027"/>
+      <stop offset="100%" stop-color="#A0181D"/>
     </linearGradient>
     <filter id="ds" x="-1%" y="-1%" width="102%" height="106%">
       <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.1"/>
@@ -11,30 +12,29 @@
   <rect width="1100" height="600" fill="#F8F9FA" rx="12"/>
   <rect x="0" y="0" width="1100" height="50" fill="url(#dHdr)" rx="12"/>
   <rect x="0" y="25" width="1100" height="25" fill="url(#dHdr)"/>
-  <text x="550" y="33" text-anchor="middle" fill="white" font-size="18" font-weight="700">Power BI Dashboard Suite — 5 Interactive Reports</text>
+  <text x="550" y="33" text-anchor="middle" fill="white" font-size="18" font-weight="700">Power BI Dashboard Suite &#8212; 5 Interactive Reports</text>
 
-  <!-- Dashboard 1: Case Management -->
+  <!-- ============ Dashboard 1: Case Management ============ -->
   <rect x="40" y="70" width="320" height="240" rx="10" fill="white" stroke="#DDD" stroke-width="1" filter="url(#ds)"/>
   <rect x="40" y="70" width="320" height="32" rx="10" fill="#D42027"/>
   <rect x="40" y="90" width="320" height="12" fill="#D42027"/>
-  <text x="200" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="700">📊 Case Management Report</text>
+  <text x="200" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="700">1. Case Management Report</text>
 
-  <!-- KPI Cards -->
   <rect x="55" y="115" width="90" height="40" rx="5" fill="#FDE8E8" stroke="#D42027" stroke-width="1"/>
   <text x="100" y="133" text-anchor="middle" font-size="9" fill="#D42027" font-weight="600">Total Cases</text>
-  <text x="100" y="148" text-anchor="middle" font-size="11" fill="#D42027" font-weight="700">###</text>
+  <text x="100" y="148" text-anchor="middle" font-size="12" fill="#D42027" font-weight="700">###</text>
 
   <rect x="155" y="115" width="90" height="40" rx="5" fill="#E3F2FD" stroke="#0078D4" stroke-width="1"/>
   <text x="200" y="133" text-anchor="middle" font-size="9" fill="#0078D4" font-weight="600">By Status</text>
-  <text x="200" y="148" text-anchor="middle" font-size="11" fill="#0078D4" font-weight="700">📈</text>
+  <text x="200" y="148" text-anchor="middle" font-size="10" fill="#0078D4" font-weight="700">Chart</text>
 
   <rect x="255" y="115" width="90" height="40" rx="5" fill="#E8F5E9" stroke="#2D8B4E" stroke-width="1"/>
   <text x="300" y="133" text-anchor="middle" font-size="9" fill="#2D8B4E" font-weight="600">By City</text>
-  <text x="300" y="148" text-anchor="middle" font-size="11" fill="#2D8B4E" font-weight="700">📍</text>
+  <text x="300" y="148" text-anchor="middle" font-size="10" fill="#2D8B4E" font-weight="700">Map</text>
 
   <!-- Bar chart mockup -->
   <rect x="55" y="170" width="130" height="70" rx="4" fill="#FAFAFA" stroke="#EEE"/>
-  <text x="120" y="185" text-anchor="middle" font-size="8" fill="#999">Cases by Origin</text>
+  <text x="120" y="185" text-anchor="middle" font-size="8" fill="#999">Cases by Country of Origin</text>
   <rect x="65" y="195" width="20" height="35" rx="2" fill="#D42027" opacity="0.8"/>
   <rect x="90" y="205" width="20" height="25" rx="2" fill="#D42027" opacity="0.6"/>
   <rect x="115" y="210" width="20" height="20" rx="2" fill="#D42027" opacity="0.4"/>
@@ -48,99 +48,99 @@
   <circle cx="290" cy="205" r="6" fill="#D42027" opacity="0.8"/>
   <circle cx="310" cy="215" r="3" fill="#D42027" opacity="0.4"/>
 
-  <text x="55" y="260" font-size="9" fill="#666">Cases by Age & Gender, Country,</text>
-  <text x="55" y="273" font-size="9" fill="#666">Status, Office, and Geo Map</text>
-  <text x="55" y="298" font-size="8" fill="#0078D4" font-weight="600">🔍 Global Filter Panel: ID, Date, Status, Office, Worker</text>
+  <text x="55" y="260" font-size="9" fill="#666">Cases by Age/Gender, Country,</text>
+  <text x="55" y="273" font-size="9" fill="#666">Status, Office, and Geographic Map</text>
+  <text x="55" y="298" font-size="8" fill="#0078D4" font-weight="600">Global Filter: ID, Date, Status, Office, Worker</text>
 
-  <!-- Dashboard 2: Follow-Up Tracking -->
+  <!-- ============ Dashboard 2: Follow-Up Tracking ============ -->
   <rect x="390" y="70" width="320" height="240" rx="10" fill="white" stroke="#DDD" stroke-width="1" filter="url(#ds)"/>
   <rect x="390" y="70" width="320" height="32" rx="10" fill="#0066FF"/>
   <rect x="390" y="90" width="320" height="12" fill="#0066FF"/>
-  <text x="550" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="700">🔄 Follow-Up Tracking Report</text>
+  <text x="550" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="700">2. Follow-Up Tracking Report</text>
 
   <rect x="405" y="115" width="90" height="40" rx="5" fill="#E3F2FD" stroke="#0066FF" stroke-width="1"/>
   <text x="450" y="133" text-anchor="middle" font-size="9" fill="#0066FF" font-weight="600">Risks ID'd</text>
-  <text x="450" y="148" text-anchor="middle" font-size="11" fill="#0066FF" font-weight="700">###</text>
+  <text x="450" y="148" text-anchor="middle" font-size="12" fill="#0066FF" font-weight="700">###</text>
 
   <rect x="505" y="115" width="90" height="40" rx="5" fill="#E8F5E9" stroke="#2D8B4E" stroke-width="1"/>
   <text x="550" y="133" text-anchor="middle" font-size="9" fill="#2D8B4E" font-weight="600">Needs</text>
-  <text x="550" y="148" text-anchor="middle" font-size="11" fill="#2D8B4E" font-weight="700">###</text>
+  <text x="550" y="148" text-anchor="middle" font-size="12" fill="#2D8B4E" font-weight="700">###</text>
 
   <rect x="605" y="115" width="90" height="40" rx="5" fill="#FFF3CD" stroke="#D4AC0D" stroke-width="1"/>
   <text x="650" y="133" text-anchor="middle" font-size="9" fill="#856404" font-weight="600">Follow-Ups</text>
-  <text x="650" y="148" text-anchor="middle" font-size="11" fill="#856404" font-weight="700">###</text>
+  <text x="650" y="148" text-anchor="middle" font-size="12" fill="#856404" font-weight="700">###</text>
 
-  <!-- Stacked bar mockup -->
+  <!-- Pipeline chart mockup -->
   <rect x="405" y="170" width="280" height="70" rx="4" fill="#FAFAFA" stroke="#EEE"/>
-  <text x="545" y="185" text-anchor="middle" font-size="8" fill="#999">Risk → Need → Follow-Up Pipeline</text>
-  <rect x="415" y="200" width="60" height="10" rx="2" fill="#0066FF"/>
-  <rect x="415" y="215" width="45" height="10" rx="2" fill="#2D8B4E"/>
-  <rect x="415" y="230" width="30" height="10" rx="2" fill="#F2C811"/>
-  <text x="485" y="209" font-size="8" fill="#666">Identified Risks</text>
-  <text x="470" y="224" font-size="8" fill="#666">Linked Needs</text>
-  <text x="455" y="239" font-size="8" fill="#666">With Follow-Up</text>
+  <text x="545" y="185" text-anchor="middle" font-size="8" fill="#999">Risk &gt; Need &gt; Follow-Up Pipeline</text>
+  <rect x="415" y="200" width="120" height="10" rx="2" fill="#0066FF"/>
+  <rect x="415" y="215" width="85" height="10" rx="2" fill="#2D8B4E"/>
+  <rect x="415" y="230" width="55" height="10" rx="2" fill="#F2C811"/>
+  <text x="545" y="209" font-size="8" fill="#666">Identified Risks</text>
+  <text x="510" y="224" font-size="8" fill="#666">Linked Needs</text>
+  <text x="480" y="239" font-size="8" fill="#666">With Follow-Up</text>
 
   <text x="405" y="260" font-size="9" fill="#666">Risk Categories, Needs by Axis,</text>
-  <text x="405" y="273" font-size="9" fill="#666">Follow-Up Results & Completion</text>
-  <text x="405" y="298" font-size="8" fill="#0066FF" font-weight="600">📐 DAX: CROSSFILTER through bridge tables RB-NB</text>
+  <text x="405" y="273" font-size="9" fill="#666">Follow-Up Results and Completion</text>
+  <text x="405" y="298" font-size="8" fill="#0066FF" font-weight="600">DAX: CROSSFILTER through bridge tables RB-NB</text>
 
-  <!-- Dashboard 3: Referral Analysis -->
+  <!-- ============ Dashboard 3: Referral Analysis ============ -->
   <rect x="740" y="70" width="320" height="240" rx="10" fill="white" stroke="#DDD" stroke-width="1" filter="url(#ds)"/>
   <rect x="740" y="70" width="320" height="32" rx="10" fill="#2D8B4E"/>
   <rect x="740" y="90" width="320" height="12" fill="#2D8B4E"/>
-  <text x="900" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="700">🔗 Referral Analysis Report</text>
+  <text x="900" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="700">3. Referral Analysis Report</text>
 
   <rect x="755" y="115" width="68" height="40" rx="5" fill="#E8F5E9" stroke="#2D8B4E" stroke-width="1"/>
   <text x="789" y="133" text-anchor="middle" font-size="8" fill="#2D8B4E" font-weight="600">Total</text>
-  <text x="789" y="148" text-anchor="middle" font-size="11" fill="#2D8B4E" font-weight="700">###</text>
+  <text x="789" y="148" text-anchor="middle" font-size="12" fill="#2D8B4E" font-weight="700">###</text>
 
   <rect x="831" y="115" width="68" height="40" rx="5" fill="#FDE8E8" stroke="#D42027" stroke-width="1"/>
   <text x="865" y="133" text-anchor="middle" font-size="8" fill="#D42027" font-weight="600">No F/U</text>
-  <text x="865" y="148" text-anchor="middle" font-size="11" fill="#D42027" font-weight="700">0</text>
+  <text x="865" y="148" text-anchor="middle" font-size="12" fill="#D42027" font-weight="700">0</text>
 
   <rect x="907" y="115" width="68" height="40" rx="5" fill="#E3F2FD" stroke="#0078D4" stroke-width="1"/>
   <text x="941" y="133" text-anchor="middle" font-size="8" fill="#0078D4" font-weight="600">Effective</text>
-  <text x="941" y="148" text-anchor="middle" font-size="11" fill="#0078D4" font-weight="700">###</text>
+  <text x="941" y="148" text-anchor="middle" font-size="12" fill="#0078D4" font-weight="700">###</text>
 
   <rect x="983" y="115" width="68" height="40" rx="5" fill="#FFF3CD" stroke="#D4AC0D" stroke-width="1"/>
   <text x="1017" y="133" text-anchor="middle" font-size="8" fill="#856404" font-weight="600">Obstacles</text>
-  <text x="1017" y="148" text-anchor="middle" font-size="11" fill="#856404" font-weight="700">0</text>
+  <text x="1017" y="148" text-anchor="middle" font-size="12" fill="#856404" font-weight="700">0</text>
 
-  <!-- Donut mockup -->
+  <!-- Donut chart mockup -->
   <circle cx="810" cy="215" r="30" fill="none" stroke="#2D8B4E" stroke-width="12" stroke-dasharray="80 110" transform="rotate(-90 810 215)"/>
   <circle cx="810" cy="215" r="30" fill="none" stroke="#D42027" stroke-width="12" stroke-dasharray="40 150" stroke-dashoffset="-80" transform="rotate(-90 810 215)"/>
   <circle cx="810" cy="215" r="30" fill="none" stroke="#F2C811" stroke-width="12" stroke-dasharray="30 160" stroke-dashoffset="-120" transform="rotate(-90 810 215)"/>
   <text x="810" y="219" text-anchor="middle" font-size="10" fill="#333" font-weight="700">%</text>
 
-  <text x="860" y="205" font-size="8.5" fill="#2D8B4E">● Effective</text>
-  <text x="860" y="218" font-size="8.5" fill="#D42027">● Obstacles</text>
-  <text x="860" y="231" font-size="8.5" fill="#F2C811">● Redirected</text>
+  <text x="860" y="200" font-size="9" fill="#2D8B4E" font-weight="600">Effective</text>
+  <text x="860" y="215" font-size="9" fill="#D42027" font-weight="600">Obstacles</text>
+  <text x="860" y="230" font-size="9" fill="#D4AC0D" font-weight="600">Redirected</text>
 
-  <text x="755" y="268" font-size="9" fill="#666">Priority Levels, Organization Dirs,</text>
+  <text x="755" y="268" font-size="9" fill="#666">Priority Levels, Organization Directory,</text>
   <text x="755" y="281" font-size="9" fill="#666">Outcome Classification (4 types)</text>
-  <text x="755" y="298" font-size="8" fill="#2D8B4E" font-weight="600">📐 DAX: CanaSeg0/1/2/3 + PorctCaosCana</text>
+  <text x="755" y="298" font-size="8" fill="#2D8B4E" font-weight="600">DAX: CanaSeg0/1/2/3 + PorctCaosCana</text>
 
-  <!-- Dashboard 4: Case Evaluation -->
+  <!-- ============ Dashboard 4: Case Evaluation ============ -->
   <rect x="40" y="335" width="500" height="230" rx="10" fill="white" stroke="#DDD" stroke-width="1" filter="url(#ds)"/>
   <rect x="40" y="335" width="500" height="32" rx="10" fill="#742774"/>
   <rect x="40" y="355" width="500" height="12" fill="#742774"/>
-  <text x="290" y="358" text-anchor="middle" fill="white" font-size="13" font-weight="700">📋 Case Evaluation Report</text>
+  <text x="290" y="358" text-anchor="middle" fill="white" font-size="13" font-weight="700">4. Case Evaluation Report</text>
 
   <rect x="55" y="380" width="110" height="38" rx="5" fill="#F3E5F5" stroke="#742774" stroke-width="1"/>
   <text x="110" y="396" text-anchor="middle" font-size="8.5" fill="#742774" font-weight="600">Needs ID'd</text>
-  <text x="110" y="411" text-anchor="middle" font-size="10" fill="#742774" font-weight="700">###</text>
+  <text x="110" y="411" text-anchor="middle" font-size="11" fill="#742774" font-weight="700">###</text>
 
   <rect x="175" y="380" width="110" height="38" rx="5" fill="#E8F5E9" stroke="#2D8B4E" stroke-width="1"/>
   <text x="230" y="396" text-anchor="middle" font-size="8.5" fill="#2D8B4E" font-weight="600">With Follow-Up</text>
-  <text x="230" y="411" text-anchor="middle" font-size="10" fill="#2D8B4E" font-weight="700">###</text>
+  <text x="230" y="411" text-anchor="middle" font-size="11" fill="#2D8B4E" font-weight="700">###</text>
 
   <rect x="295" y="380" width="110" height="38" rx="5" fill="#FDE8E8" stroke="#D42027" stroke-width="1"/>
   <text x="350" y="396" text-anchor="middle" font-size="8.5" fill="#D42027" font-weight="600">VBG Cases</text>
-  <text x="350" y="411" text-anchor="middle" font-size="10" fill="#D42027" font-weight="700">###</text>
+  <text x="350" y="411" text-anchor="middle" font-size="11" fill="#D42027" font-weight="700">###</text>
 
   <rect x="415" y="380" width="110" height="38" rx="5" fill="#FFF3CD" stroke="#D4AC0D" stroke-width="1"/>
   <text x="470" y="396" text-anchor="middle" font-size="8.5" fill="#856404" font-weight="600">Avg Score</text>
-  <text x="470" y="411" text-anchor="middle" font-size="10" fill="#856404" font-weight="700">★ /5</text>
+  <text x="470" y="411" text-anchor="middle" font-size="11" fill="#856404" font-weight="700">* / 5</text>
 
   <!-- Scoring scale -->
   <rect x="55" y="430" width="468" height="30" rx="6" fill="#FAFAFA" stroke="#EEE"/>
@@ -156,14 +156,14 @@
 
   <text x="55" y="495" font-size="9" fill="#666">Avg Evaluation by City, by Case Worker, Overall Score,</text>
   <text x="55" y="508" font-size="9" fill="#666">Closed Cases by City and Date, VBG Coverage Rates</text>
-  <text x="55" y="530" font-size="8" fill="#742774" font-weight="600">📐 DAX: Multi-phase normative criteria via 3 bridge tables (Fase → Criterio → Cumplimiento)</text>
-  <text x="55" y="545" font-size="8" fill="#742774" font-weight="600">📐 DAX: USERELATIONSHIP for inactive calendar analysis</text>
+  <text x="55" y="530" font-size="8" fill="#742774" font-weight="600">DAX: Multi-phase normative criteria via 3 bridge tables (Fase &gt; Criterio &gt; Cumplimiento)</text>
+  <text x="55" y="545" font-size="8" fill="#742774" font-weight="600">DAX: USERELATIONSHIP for inactive calendar analysis</text>
 
-  <!-- Dashboard 5: Final Results -->
+  <!-- ============ Dashboard 5: Final Results ============ -->
   <rect x="570" y="335" width="490" height="230" rx="10" fill="white" stroke="#DDD" stroke-width="1" filter="url(#ds)"/>
   <rect x="570" y="335" width="490" height="32" rx="10" fill="#333"/>
   <rect x="570" y="355" width="490" height="12" fill="#333"/>
-  <text x="815" y="358" text-anchor="middle" fill="white" font-size="13" font-weight="700">🏆 Final Results Report (Executive)</text>
+  <text x="815" y="358" text-anchor="middle" fill="white" font-size="13" font-weight="700">5. Final Results Report (Executive)</text>
 
   <!-- KPI Grid -->
   <rect x="585" y="380" width="95" height="50" rx="5" fill="#FDE8E8" stroke="#D42027" stroke-width="1"/>
@@ -182,7 +182,7 @@
   <text x="972" y="399" text-anchor="middle" font-size="8" fill="#856404" font-weight="600">Referral Completion %</text>
   <text x="972" y="420" text-anchor="middle" font-size="14" fill="#856404" font-weight="700">##%</text>
 
-  <!-- Mini chart -->
+  <!-- Mini bar chart -->
   <rect x="585" y="445" width="220" height="55" rx="4" fill="#FAFAFA" stroke="#EEE"/>
   <text x="695" y="460" text-anchor="middle" font-size="8" fill="#999">Cases by City</text>
   <rect x="600" y="468" width="30" height="22" rx="2" fill="#333" opacity="0.7"/>
@@ -191,7 +191,7 @@
   <rect x="705" y="475" width="30" height="15" rx="2" fill="#333" opacity="0.35"/>
   <rect x="740" y="480" width="30" height="10" rx="2" fill="#333" opacity="0.3"/>
 
-  <!-- Map -->
+  <!-- Map mockup -->
   <rect x="815" y="445" width="230" height="55" rx="4" fill="#E3F2FD" stroke="#EEE"/>
   <text x="930" y="460" text-anchor="middle" font-size="8" fill="#0078D4">Geographic Distribution</text>
   <circle cx="860" cy="478" r="4" fill="#D42027" opacity="0.7"/>
@@ -202,6 +202,6 @@
 
   <text x="585" y="520" font-size="9" fill="#666">Comprehensive executive summary: all KPIs aggregated</text>
   <text x="585" y="533" font-size="9" fill="#666">VBG tracking, Needs/Referral completion, Geographic view</text>
-  <text x="585" y="555" font-size="8" fill="#333" font-weight="600">📐 All 5 dashboards share a unified filter panel and are embedded in Power Apps</text>
+  <text x="585" y="555" font-size="8" fill="#333" font-weight="600">All 5 dashboards share a unified filter panel and are embedded in Power Apps</text>
 
 </svg>

@@ -31,83 +31,91 @@
     <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
     </filter>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#888"/>
+    </marker>
   </defs>
 
-  <!-- Background -->
   <rect width="1100" height="720" fill="#F8F9FA" rx="12"/>
 
   <!-- Header -->
   <rect x="0" y="0" width="1100" height="58" fill="url(#headerGrad)" rx="12"/>
   <rect x="0" y="30" width="1100" height="28" fill="url(#headerGrad)"/>
-  <text x="550" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="700">System Architecture — Case Management Platform</text>
+  <text x="550" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="700">System Architecture  &#8212;  Case Management Platform</text>
 
-  <!-- Layer 1: Presentation -->
-  <rect x="40" y="78" width="1020" height="90" rx="10" fill="url(#msGrad)" filter="url(#shadow)"/>
-  <text x="60" y="105" fill="white" font-size="11" font-weight="600" opacity="0.8">PRESENTATION LAYER</text>
-  <rect x="60" y="115" width="250" height="40" rx="6" fill="white" fill-opacity="0.15"/>
-  <text x="185" y="140" text-anchor="middle" fill="white" font-size="13" font-weight="600">⚡ Power Apps (Canvas)</text>
-  <text x="330" y="135" fill="white" font-size="11" opacity="0.9">• 15+ Screens • Role-Based Navigation</text>
-  <text x="330" y="152" fill="white" font-size="11" opacity="0.9">• Multi-Platform (Web + Mobile) • State Management • Corporate Branding</text>
+  <!-- LAYER 1: Presentation -->
+  <rect x="40" y="78" width="1020" height="95" rx="10" fill="url(#msGrad)" filter="url(#shadow)"/>
+  <text x="55" y="98" fill="white" font-size="10" font-weight="600" letter-spacing="1.5" opacity="0.7">PRESENTATION LAYER</text>
+  <rect x="55" y="108" width="220" height="50" rx="8" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="165" y="131" text-anchor="middle" fill="white" font-size="15" font-weight="700">Power Apps</text>
+  <text x="165" y="148" text-anchor="middle" fill="white" font-size="10" opacity="0.8">Canvas App (Low-Code UI)</text>
+  <text x="300" y="128" fill="white" font-size="11" opacity="0.9">15+ Screens  |  Role-Based Navigation  |  Responsive Design (Web + Mobile)</text>
+  <text x="300" y="148" fill="white" font-size="11" opacity="0.9">State Management via Collections, Context Variables, Global Variables</text>
 
-  <!-- Arrow down -->
-  <polygon points="550,168 540,178 545,178 545,188 555,188 555,178 560,178" fill="#666"/>
+  <path d="M550,173 L550,190" stroke="#888" stroke-width="2" marker-end="url(#arrowDown)"/>
 
-  <!-- Layer 2: Orchestration -->
-  <rect x="40" y="192" width="1020" height="90" rx="10" fill="url(#paGrad)" filter="url(#shadow)"/>
-  <text x="60" y="219" fill="white" font-size="11" font-weight="600" opacity="0.8">ORCHESTRATION LAYER</text>
-  <rect x="60" y="229" width="250" height="40" rx="6" fill="white" fill-opacity="0.15"/>
-  <text x="185" y="254" text-anchor="middle" fill="white" font-size="13" font-weight="600">⚙️ Power Automate</text>
-  <text x="330" y="249" fill="white" font-size="11" opacity="0.9">• 8 Cloud Flows • Document Lifecycle • PDF Encryption Pipeline</text>
-  <text x="330" y="266" fill="white" font-size="11" opacity="0.9">• Email Dispatch • QR Processing • BI Dataset Refresh • Async Execution</text>
+  <!-- LAYER 2: Orchestration -->
+  <rect x="40" y="195" width="1020" height="95" rx="10" fill="url(#paGrad)" filter="url(#shadow)"/>
+  <text x="55" y="215" fill="white" font-size="10" font-weight="600" letter-spacing="1.5" opacity="0.7">ORCHESTRATION LAYER</text>
+  <rect x="55" y="225" width="220" height="50" rx="8" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="165" y="248" text-anchor="middle" fill="white" font-size="15" font-weight="700">Power Automate</text>
+  <text x="165" y="265" text-anchor="middle" fill="white" font-size="10" opacity="0.8">8 Cloud Flows</text>
+  <text x="300" y="245" fill="white" font-size="11" opacity="0.9">Document Lifecycle  |  PDF Encryption Pipeline  |  Email Dispatch</text>
+  <text x="300" y="265" fill="white" font-size="11" opacity="0.9">QR Processing  |  BI Dataset Refresh  |  Async Execution (offloads UI)</text>
 
-  <!-- Arrow down -->
-  <polygon points="550,282 540,292 545,292 545,302 555,302 555,292 560,292" fill="#666"/>
+  <path d="M550,290 L550,307" stroke="#888" stroke-width="2" marker-end="url(#arrowDown)"/>
 
-  <!-- Layer 3: Data -->
-  <rect x="40" y="306" width="1020" height="90" rx="10" fill="url(#spGrad)" filter="url(#shadow)"/>
-  <text x="60" y="333" fill="white" font-size="11" font-weight="600" opacity="0.8">DATA LAYER</text>
-  <rect x="60" y="343" width="280" height="40" rx="6" fill="white" fill-opacity="0.15"/>
-  <text x="200" y="368" text-anchor="middle" fill="white" font-size="13" font-weight="600">📊 SharePoint Online Lists</text>
-  <text x="360" y="363" fill="white" font-size="11" opacity="0.9">• 20+ Entities • Fact Constellation Schema • Bridge Tables (M:N)</text>
-  <text x="360" y="380" fill="white" font-size="11" opacity="0.9">• Document Libraries • Indexed Columns • Azure AD Integrated Security</text>
+  <!-- LAYER 3: Data -->
+  <rect x="40" y="312" width="1020" height="95" rx="10" fill="url(#spGrad)" filter="url(#shadow)"/>
+  <text x="55" y="332" fill="white" font-size="10" font-weight="600" letter-spacing="1.5" opacity="0.7">DATA LAYER</text>
+  <rect x="55" y="342" width="260" height="50" rx="8" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="185" y="365" text-anchor="middle" fill="white" font-size="15" font-weight="700">SharePoint Online Lists</text>
+  <text x="185" y="382" text-anchor="middle" fill="white" font-size="10" opacity="0.8">20+ Entities (Transactional Store)</text>
+  <text x="340" y="362" fill="white" font-size="11" opacity="0.9">Fact Constellation Schema  |  Bridge Tables (M:N)  |  Document Libraries</text>
+  <text x="340" y="382" fill="white" font-size="11" opacity="0.9">Indexed Columns (Delegation &gt;5K)  |  Azure AD Integrated Security</text>
 
-  <!-- Arrow down -->
-  <polygon points="550,396 540,406 545,406 545,416 555,416 555,406 560,406" fill="#666"/>
+  <path d="M550,407 L550,424" stroke="#888" stroke-width="2" marker-end="url(#arrowDown)"/>
 
-  <!-- Layer 4: Analytics -->
-  <rect x="40" y="420" width="1020" height="90" rx="10" fill="url(#biGrad)" filter="url(#shadow)"/>
-  <text x="60" y="447" fill="#333" font-size="11" font-weight="600" opacity="0.8">ANALYTICS LAYER</text>
-  <rect x="60" y="457" width="250" height="40" rx="6" fill="#333" fill-opacity="0.15"/>
-  <text x="185" y="482" text-anchor="middle" fill="#333" font-size="13" font-weight="600">📈 Power BI</text>
-  <text x="330" y="477" fill="#333" font-size="11" opacity="0.9">• 5 Interactive Dashboards • Advanced DAX (CROSSFILTER, USERELATIONSHIP)</text>
-  <text x="330" y="494" fill="#333" font-size="11" opacity="0.9">• Embedded in Power Apps • Cross-Filter Global Panels • Corporate Themes</text>
+  <!-- LAYER 4: Analytics -->
+  <rect x="40" y="429" width="1020" height="95" rx="10" fill="url(#biGrad)" filter="url(#shadow)"/>
+  <text x="55" y="449" fill="#333" font-size="10" font-weight="600" letter-spacing="1.5" opacity="0.7">ANALYTICS LAYER</text>
+  <rect x="55" y="459" width="220" height="50" rx="8" fill="#333" fill-opacity="0.12" stroke="#333" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="165" y="482" text-anchor="middle" fill="#333" font-size="15" font-weight="700">Power BI</text>
+  <text x="165" y="499" text-anchor="middle" fill="#333" font-size="10" opacity="0.8">5 Interactive Dashboards</text>
+  <text x="300" y="479" fill="#333" font-size="11" opacity="0.9">Advanced DAX: CROSSFILTER, USERELATIONSHIP  |  Embedded in Power Apps</text>
+  <text x="300" y="499" fill="#333" font-size="11" opacity="0.9">Cross-Filter Global Panels  |  Corporate Theme (JSON)  |  Relational Model</text>
 
-  <!-- Arrow down -->
-  <polygon points="550,510 540,520 545,520 545,530 555,530 555,520 560,520" fill="#666"/>
+  <path d="M550,524 L550,541" stroke="#888" stroke-width="2" marker-end="url(#arrowDown)"/>
 
-  <!-- Layer 5: External Services -->
-  <rect x="40" y="534" width="1020" height="90" rx="10" fill="url(#extGrad)" filter="url(#shadow)"/>
-  <text x="60" y="561" fill="white" font-size="11" font-weight="600" opacity="0.8">EXTERNAL SERVICES LAYER</text>
+  <!-- LAYER 5: External Services -->
+  <rect x="40" y="546" width="1020" height="100" rx="10" fill="url(#extGrad)" filter="url(#shadow)"/>
+  <text x="55" y="566" fill="white" font-size="10" font-weight="600" letter-spacing="1.5" opacity="0.7">EXTERNAL SERVICES LAYER</text>
 
-  <rect x="60" y="571" width="200" height="40" rx="6" fill="white" fill-opacity="0.15"/>
-  <text x="160" y="596" text-anchor="middle" fill="white" font-size="12" font-weight="600">🔒 Cloudmersive API</text>
+  <rect x="55" y="578" width="210" height="52" rx="8" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="160" y="600" text-anchor="middle" fill="white" font-size="13" font-weight="700">Cloudmersive API</text>
+  <text x="160" y="618" text-anchor="middle" fill="white" font-size="9" opacity="0.8">Primary PDF Encryption (REST)</text>
 
-  <rect x="280" y="571" width="260" height="40" rx="6" fill="white" fill-opacity="0.15"/>
-  <text x="410" y="591" text-anchor="middle" fill="white" font-size="12" font-weight="600">🐍 Flask API (Render)</text>
-  <text x="410" y="605" text-anchor="middle" fill="white" font-size="9" opacity="0.8">Python / PyPDF2 / Fallback</text>
+  <rect x="285" y="578" width="230" height="52" rx="8" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="400" y="600" text-anchor="middle" fill="white" font-size="13" font-weight="700">Flask API on Render</text>
+  <text x="400" y="618" text-anchor="middle" fill="white" font-size="9" opacity="0.8">Python / PyPDF2 / Fallback Encryption</text>
 
-  <rect x="560" y="571" width="220" height="40" rx="6" fill="white" fill-opacity="0.15"/>
-  <text x="670" y="596" text-anchor="middle" fill="white" font-size="12" font-weight="600">📱 GitHub Pages (QR)</text>
+  <rect x="535" y="578" width="220" height="52" rx="8" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="645" y="600" text-anchor="middle" fill="white" font-size="13" font-weight="700">GitHub Pages</text>
+  <text x="645" y="618" text-anchor="middle" fill="white" font-size="9" opacity="0.8">QR Decoder (JavaScript)</text>
 
-  <rect x="800" y="571" width="240" height="40" rx="6" fill="white" fill-opacity="0.15"/>
-  <text x="920" y="596" text-anchor="middle" fill="white" font-size="12" font-weight="600">📧 Outlook / Exchange</text>
+  <rect x="775" y="578" width="270" height="52" rx="8" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="910" y="600" text-anchor="middle" fill="white" font-size="13" font-weight="700">Outlook / Exchange Online</text>
+  <text x="910" y="618" text-anchor="middle" fill="white" font-size="9" opacity="0.8">Encrypted Email Dispatch</text>
 
-  <!-- Layer 6: Security -->
-  <rect x="40" y="644" width="1020" height="56" rx="10" fill="url(#secGrad)" filter="url(#shadow)"/>
-  <text x="60" y="669" fill="white" font-size="11" font-weight="600" opacity="0.8">IDENTITY & SECURITY</text>
-  <text x="250" y="678" fill="white" font-size="12">🔐 Azure AD (Entra ID)</text>
-  <text x="470" y="678" fill="white" font-size="12">│  Hashed User Identity</text>
-  <text x="680" y="678" fill="white" font-size="12">│  RBAC (3 Roles)</text>
-  <text x="850" y="678" fill="white" font-size="12">│  Data Obfuscation</text>
+  <!-- LAYER 6: Security -->
+  <rect x="40" y="660" width="1020" height="48" rx="10" fill="url(#secGrad)" filter="url(#shadow)"/>
+  <text x="55" y="680" fill="white" font-size="10" font-weight="600" letter-spacing="1.5" opacity="0.7">IDENTITY AND SECURITY</text>
+  <text x="260" y="694" fill="white" font-size="12" font-weight="600">Azure AD (Entra ID)</text>
+  <text x="460" y="694" fill="white" font-size="12" opacity="0.5">|</text>
+  <text x="500" y="694" fill="white" font-size="12" font-weight="600">Hashed User Identity</text>
+  <text x="680" y="694" fill="white" font-size="12" opacity="0.5">|</text>
+  <text x="720" y="694" fill="white" font-size="12" font-weight="600">RBAC (3 Roles)</text>
+  <text x="870" y="694" fill="white" font-size="12" opacity="0.5">|</text>
+  <text x="910" y="694" fill="white" font-size="12" font-weight="600">Data Obfuscation</text>
 
 </svg>
