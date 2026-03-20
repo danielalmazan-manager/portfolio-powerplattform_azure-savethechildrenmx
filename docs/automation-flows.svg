@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 650" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="aHdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D42027"/><stop offset="100%" stop-color="#A0181D"/>
+    </linearGradient>
+    <linearGradient id="flowBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0066FF"/><stop offset="100%" stop-color="#004EC2"/>
+    </linearGradient>
+    <filter id="fs" x="-1%" y="-1%" width="102%" height="106%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="650" fill="#F8F9FA" rx="12"/>
+  <rect x="0" y="0" width="1100" height="50" fill="url(#aHdr)" rx="12"/>
+  <rect x="0" y="25" width="1100" height="25" fill="url(#aHdr)"/>
+  <text x="550" y="33" text-anchor="middle" fill="white" font-size="18" font-weight="700">Automation Layer — 8 Cloud Flows &amp; External Services</text>
+
+  <!-- Central Hub: Power Automate -->
+  <rect x="420" y="80" width="260" height="70" rx="12" fill="url(#flowBg)" filter="url(#fs)"/>
+  <text x="550" y="110" text-anchor="middle" fill="white" font-size="16" font-weight="700">⚙️ Power Automate</text>
+  <text x="550" y="130" text-anchor="middle" fill="white" font-size="11" opacity="0.9">Cloud Orchestration Engine</text>
+
+  <!-- Left Source: Power Apps -->
+  <rect x="40" y="88" width="170" height="55" rx="10" fill="#742774" filter="url(#fs)"/>
+  <text x="125" y="113" text-anchor="middle" fill="white" font-size="13" font-weight="600">⚡ Power Apps</text>
+  <text x="125" y="130" text-anchor="middle" fill="white" font-size="9" opacity="0.8">Trigger: Button / OnSelect</text>
+  <line x1="210" y1="115" x2="420" y2="115" stroke="#742774" stroke-width="2" marker-end="url(#arrowP)"/>
+  <defs><marker id="arrowP" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#742774"/></marker></defs>
+
+  <!-- Right Source: SharePoint Event -->
+  <rect x="890" y="88" width="170" height="55" rx="10" fill="#0078D4" filter="url(#fs)"/>
+  <text x="975" y="113" text-anchor="middle" fill="white" font-size="13" font-weight="600">📋 SharePoint</text>
+  <text x="975" y="130" text-anchor="middle" fill="white" font-size="9" opacity="0.8">Trigger: Item Created</text>
+  <line x1="890" y1="115" x2="680" y2="115" stroke="#0078D4" stroke-width="2" marker-end="url(#arrowS)"/>
+  <defs><marker id="arrowS" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#0078D4"/></marker></defs>
+
+  <!-- Flow Cards Row 1 -->
+  <!-- Flow 1: CarpetaCasoVV2 -->
+  <rect x="40" y="195" width="230" height="95" rx="8" fill="white" stroke="#0066FF" stroke-width="1.5" filter="url(#fs)"/>
+  <rect x="40" y="195" width="230" height="28" rx="8" fill="#0066FF"/>
+  <rect x="40" y="211" width="230" height="12" fill="#0066FF"/>
+  <text x="155" y="215" text-anchor="middle" fill="white" font-size="11" font-weight="700">1. CarpetaCasoVV2</text>
+  <text x="50" y="242" font-size="9.5" fill="#333">📁 Creates structured folder hierarchy</text>
+  <text x="50" y="256" font-size="9.5" fill="#333">in SharePoint for each new case</text>
+  <text x="50" y="273" font-size="9" fill="#0066FF" font-weight="600">Trigger: Power Apps Button</text>
+
+  <!-- Flow 2: SubirArchivoCaso -->
+  <rect x="290" y="195" width="230" height="95" rx="8" fill="white" stroke="#0066FF" stroke-width="1.5" filter="url(#fs)"/>
+  <rect x="290" y="195" width="230" height="28" rx="8" fill="#0066FF"/>
+  <rect x="290" y="211" width="230" height="12" fill="#0066FF"/>
+  <text x="405" y="215" text-anchor="middle" fill="white" font-size="11" font-weight="700">2. SubirArchivoCaso</text>
+  <text x="300" y="242" font-size="9.5" fill="#333">📤 Uploads files to SharePoint</text>
+  <text x="300" y="256" font-size="9.5" fill="#333">Conditional routing + sharing links</text>
+  <text x="300" y="273" font-size="9" fill="#0066FF" font-weight="600">Trigger: Power Apps Button</text>
+
+  <!-- Flow 3: Guardar PDF Canalización -->
+  <rect x="540" y="195" width="230" height="95" rx="8" fill="white" stroke="#0066FF" stroke-width="1.5" filter="url(#fs)"/>
+  <rect x="540" y="195" width="230" height="28" rx="8" fill="#0066FF"/>
+  <rect x="540" y="211" width="230" height="12" fill="#0066FF"/>
+  <text x="655" y="215" text-anchor="middle" fill="white" font-size="11" font-weight="700">3. Guardar PDF Canaliz.</text>
+  <text x="550" y="242" font-size="9.5" fill="#333">📄 Stores referral PDF + QR image</text>
+  <text x="550" y="256" font-size="9.5" fill="#333">Returns file IDs for tracking</text>
+  <text x="550" y="273" font-size="9" fill="#0066FF" font-weight="600">Trigger: Power Apps Button</text>
+
+  <!-- Flow 4: EnviarMailCanalización -->
+  <rect x="790" y="195" width="270" height="95" rx="8" fill="white" stroke="#D42027" stroke-width="2" filter="url(#fs)"/>
+  <rect x="790" y="195" width="270" height="28" rx="8" fill="#D42027"/>
+  <rect x="790" y="211" width="270" height="12" fill="#D42027"/>
+  <text x="925" y="215" text-anchor="middle" fill="white" font-size="11" font-weight="700">4. EnviarMailCanalización ⭐</text>
+  <text x="800" y="242" font-size="9.5" fill="#333">🔒 Encrypts PDF via Cloudmersive API</text>
+  <text x="800" y="256" font-size="9.5" fill="#333">📧 Sends encrypted PDF + QR by email</text>
+  <text x="800" y="273" font-size="9" fill="#D42027" font-weight="600">Trigger: SharePoint Item Created</text>
+
+  <!-- Flow Cards Row 2 -->
+  <!-- Flow 5: visorDocumentoPDF -->
+  <rect x="40" y="330" width="230" height="95" rx="8" fill="white" stroke="#0066FF" stroke-width="1.5" filter="url(#fs)"/>
+  <rect x="40" y="330" width="230" height="28" rx="8" fill="#0066FF"/>
+  <rect x="40" y="346" width="230" height="12" fill="#0066FF"/>
+  <text x="155" y="350" text-anchor="middle" fill="white" font-size="11" font-weight="700">5. visorDocumentoPDF</text>
+  <text x="50" y="377" font-size="9.5" fill="#333">👁️ Retrieves file content (Base64)</text>
+  <text x="50" y="391" font-size="9.5" fill="#333">for in-app PDF rendering</text>
+  <text x="50" y="408" font-size="9" fill="#0066FF" font-weight="600">Trigger: Power Apps Button</text>
+
+  <!-- Flow 6: Decodificación QR -->
+  <rect x="290" y="330" width="230" height="95" rx="8" fill="white" stroke="#2D8B4E" stroke-width="2" filter="url(#fs)"/>
+  <rect x="290" y="330" width="230" height="28" rx="8" fill="#2D8B4E"/>
+  <rect x="290" y="346" width="230" height="12" fill="#2D8B4E"/>
+  <text x="405" y="350" text-anchor="middle" fill="white" font-size="11" font-weight="700">6. Decodificación QR</text>
+  <text x="300" y="377" font-size="9.5" fill="#333">📱 JavaScript QR code decoder</text>
+  <text x="300" y="391" font-size="9.5" fill="#333">URL parameter → clipboard copy</text>
+  <text x="300" y="408" font-size="9" fill="#2D8B4E" font-weight="600">Hosted: GitHub Pages</text>
+
+  <!-- Flow 7: ActualizarPBI-General -->
+  <rect x="540" y="330" width="230" height="95" rx="8" fill="white" stroke="#F2C811" stroke-width="2" filter="url(#fs)"/>
+  <rect x="540" y="330" width="230" height="28" rx="8" fill="#F2C811"/>
+  <rect x="540" y="346" width="230" height="12" fill="#F2C811"/>
+  <text x="655" y="350" text-anchor="middle" fill="#333" font-size="11" font-weight="700">7. ActualizarPBI-General</text>
+  <text x="550" y="377" font-size="9.5" fill="#333">📊 Triggers Power BI dataset refresh</text>
+  <text x="550" y="391" font-size="9.5" fill="#333">from within the application</text>
+  <text x="550" y="408" font-size="9" fill="#856404" font-weight="600">Trigger: Power Apps Button</text>
+
+  <!-- Flow 8: Codificación PDF Manual -->
+  <rect x="790" y="330" width="270" height="95" rx="8" fill="white" stroke="#2D8B4E" stroke-width="2" filter="url(#fs)"/>
+  <rect x="790" y="330" width="270" height="28" rx="8" fill="#2D8B4E"/>
+  <rect x="790" y="346" width="270" height="12" fill="#2D8B4E"/>
+  <text x="925" y="350" text-anchor="middle" fill="white" font-size="11" font-weight="700">8. Codificación PDF (Flask)</text>
+  <text x="800" y="377" font-size="9.5" fill="#333">🐍 Custom Python microservice</text>
+  <text x="800" y="391" font-size="9.5" fill="#333">Master-key auth + in-memory encrypt</text>
+  <text x="800" y="408" font-size="9" fill="#2D8B4E" font-weight="600">Hosted: Render (PaaS) — Fallback</text>
+
+  <!-- External Services Section -->
+  <rect x="40" y="465" width="1020" height="160" rx="10" fill="white" stroke="#DDD" stroke-width="1" filter="url(#fs)"/>
+  <text x="60" y="490" font-size="13" fill="#333" font-weight="700">External Service Integration Map</text>
+
+  <!-- Cloudmersive -->
+  <rect x="60" y="505" width="200" height="55" rx="8" fill="#E8F5E9" stroke="#2D8B4E" stroke-width="1.5"/>
+  <text x="160" y="528" text-anchor="middle" font-size="12" fill="#2D8B4E" font-weight="700">🔒 Cloudmersive API</text>
+  <text x="160" y="548" text-anchor="middle" font-size="9" fill="#555">Primary PDF Encryption (REST)</text>
+
+  <!-- Render -->
+  <rect x="290" y="505" width="200" height="55" rx="8" fill="#E8F5E9" stroke="#2D8B4E" stroke-width="1.5"/>
+  <text x="390" y="528" text-anchor="middle" font-size="12" fill="#2D8B4E" font-weight="700">🐍 Render (Flask API)</text>
+  <text x="390" y="548" text-anchor="middle" font-size="9" fill="#555">Fallback Encryption (Python)</text>
+
+  <!-- GitHub -->
+  <rect x="520" y="505" width="200" height="55" rx="8" fill="#F3E5F5" stroke="#742774" stroke-width="1.5"/>
+  <text x="620" y="528" text-anchor="middle" font-size="12" fill="#742774" font-weight="700">📱 GitHub Pages</text>
+  <text x="620" y="548" text-anchor="middle" font-size="9" fill="#555">QR Decoder (JavaScript)</text>
+
+  <!-- SharePoint -->
+  <rect x="750" y="505" width="140" height="55" rx="8" fill="#E3F2FD" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="820" y="528" text-anchor="middle" font-size="12" fill="#0078D4" font-weight="700">📋 SharePoint</text>
+  <text x="820" y="548" text-anchor="middle" font-size="9" fill="#555">File Storage + Lists</text>
+
+  <!-- Power BI -->
+  <rect x="920" y="505" width="120" height="55" rx="8" fill="#FFFDE7" stroke="#D4AC0D" stroke-width="1.5"/>
+  <text x="980" y="528" text-anchor="middle" font-size="12" fill="#856404" font-weight="700">📊 Power BI</text>
+  <text x="980" y="548" text-anchor="middle" font-size="9" fill="#555">Dataset Refresh</text>
+
+  <!-- Connection arrows from flows to services -->
+  <line x1="925" y1="290" x2="160" y2="505" stroke="#2D8B4E" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="925" y1="425" x2="390" y2="505" stroke="#2D8B4E" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="405" y1="425" x2="620" y2="505" stroke="#742774" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="655" y1="425" x2="980" y2="505" stroke="#D4AC0D" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- Footer Note -->
+  <rect x="60" y="580" width="450" height="30" rx="6" fill="#FFF3CD" stroke="#D4820E" stroke-width="1"/>
+  <text x="285" y="600" text-anchor="middle" font-size="10" fill="#856404" font-weight="600">💡 Dual-channel encryption: Cloudmersive (auto) + Flask (manual fallback)</text>
+
+  <rect x="540" y="580" width="500" height="30" rx="6" fill="#E3F2FD" stroke="#0078D4" stroke-width="1"/>
+  <text x="790" y="600" text-anchor="middle" font-size="10" fill="#0078D4" font-weight="600">📡 All flows execute asynchronously to keep the Power Apps UI responsive</text>
+
+</svg>
